@@ -40,6 +40,7 @@ import requests
 
 from utils.frontend import (fetch_chunk, fetch_shell_html, parse_animation_frames,
                             parse_chunk_manifest, parse_site_verification)
+from utils.resource_paths import asset_path
 
 # 2023-05-01T00:00:00Z，前端写死的时间原点
 EPOCH_SECONDS = 1682924400
@@ -198,9 +199,7 @@ class ClientTransaction:
         """
         candidate = path or os.environ.get('XCTID_PROFILE_FILE', '').strip()
         if not candidate:
-            candidate = os.path.abspath(os.path.join(
-                os.path.dirname(__file__), '..', 'static',
-                'transaction_l1.json'))
+            candidate = asset_path('transaction_l1.json')
         with open(candidate, encoding='utf-8') as fp:
             profile = json.load(fp)
         key = profile.get('key')

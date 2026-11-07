@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-23T22:22:31+0800",
-  "frontendSha": "c0c8de6835dc7a1ef4236b4a87190c5e7b5f62d1",
+  "generatedAt": "2026-11-07T18:37:55+0800",
+  "frontendSha": "87c79ad79ded6844f4124588746090b7198a8686",
   "operations": {
     "ActionTrend": {
       "queryId": "imr0xefZmILHTgb6-9pe3g",
@@ -21,7 +21,7 @@
       "fieldToggles": []
     },
     "AiTrendByRestId": {
-      "queryId": "eSeYHOd6VbQ_Emazm5ntIA",
+      "queryId": "qrhDEwcC6kB5TIalxd-4XA",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -34,6 +34,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -61,6 +62,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
       "fieldToggles": [
@@ -71,11 +73,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntitiesSlice": {
-      "queryId": "oLK4ja2Rj6q21t4ktw8pYA",
+      "queryId": "8hpdcfFniawLzEQ7CD2WMQ",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -86,6 +89,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -96,7 +100,7 @@
       "fieldToggles": []
     },
     "ArticleEntityDraftCreate": {
-      "queryId": "_rbmb_NKLqKVBr5X_MSoMQ",
+      "queryId": "fCkdrI6zrnw_UtVa3WDHhw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -107,11 +111,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntityPublish": {
-      "queryId": "872mse3gUSifcgeJBBl4WA",
+      "queryId": "86zqyWZeIoccSyBxmxcd6w",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -122,11 +127,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntityResultByRestId": {
-      "queryId": "OF2ES8qTOPLFBU_oZWVkQw",
+      "queryId": "eUiP53I_YemhBOI2TMCI3A",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -137,11 +143,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntityUnpublish": {
-      "queryId": "eDeZlB876QVv1TK-RFeLUw",
+      "queryId": "hRtkxfQu7M6mnlP1FRcGgg",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -152,11 +159,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntityUpdateContent": {
-      "queryId": "x4Pz2ifYkOD6uSvzxOIUig",
+      "queryId": "FMC9CKP145f5wgXYCsmtiA",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -167,11 +175,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntityUpdateCoverMedia": {
-      "queryId": "TRcLHwCpNAkBVcxy4FLH1A",
+      "queryId": "Rlvhkuecg1z_7O5vC2G1fQ",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -182,11 +191,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ArticleEntityUpdateTitle": {
-      "queryId": "brHFCBTXXg8WOqc7BnXfAw",
+      "queryId": "wTWiDSxOe1ZsImjXyuoiYw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -197,6 +207,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -207,7 +218,7 @@
       "fieldToggles": []
     },
     "AudioSpaceAddSharing": {
-      "queryId": "yeK6JF5dCl5qxSzKn06ktw",
+      "queryId": "0CrTevh0Oxx1-M0px0-0cw",
       "operationType": "mutation",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -219,6 +230,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -246,11 +258,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withArticleRichContentState",
         "withArticlePlainText",
         "withArticleSummaryText",
@@ -261,7 +275,7 @@
       ]
     },
     "AudioSpaceById": {
-      "queryId": "ipEqgz4P_bZCGY3fBnfsxQ",
+      "queryId": "zm3JmUpYWDXIUsf_33-ZrA",
       "operationType": "query",
       "featureSwitches": [
         "spaces_2022_h2_spaces_communities",
@@ -279,6 +293,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -302,11 +317,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -330,12 +347,6 @@
     },
     "AuthenticatePeriscope": {
       "queryId": "r7VUmxbfqNkx7uwjgONSNw",
-      "operationType": "query",
-      "featureSwitches": [],
-      "fieldToggles": []
-    },
-    "BakeryQuery": {
-      "queryId": "pROR-yRiBVsEjJyHt3fvhg",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -365,7 +376,7 @@
       "fieldToggles": []
     },
     "BirdwatchCreateNote": {
-      "queryId": "n572jtiUR1_Sfl8Yw4BKzA",
+      "queryId": "dZ5t9-LyPZD4kGNP5PEQMQ",
       "operationType": "mutation",
       "featureSwitches": [
         "responsive_web_birdwatch_media_notes_enabled",
@@ -383,6 +394,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -435,7 +447,7 @@
       "fieldToggles": []
     },
     "BirdwatchFetchAuthenticatedBirdwatchMatchSlice": {
-      "queryId": "mJUa2mlzfmE7ggal4KS4KQ",
+      "queryId": "npz98m9NOm7Snvj0Ik3obQ",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -447,6 +459,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -474,6 +487,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -485,6 +499,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -530,7 +545,7 @@
       "fieldToggles": []
     },
     "BirdwatchFetchContributorNotesSlice": {
-      "queryId": "8Cl9N5y-XB-WoRJ3Ia6_zA",
+      "queryId": "oP0BATsYv5gPPb-iiG1sjg",
       "operationType": "query",
       "featureSwitches": [
         "responsive_web_birdwatch_media_notes_enabled",
@@ -546,6 +561,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -573,6 +589,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -584,11 +601,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "BirdwatchFetchGlobalTimeline": {
-      "queryId": "OcyPQ0OPIMSvSin4Mq9Apw",
+      "queryId": "IJbJ4jU4OvOeYZOIC6eG6w",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -607,6 +625,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -629,11 +648,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -644,7 +665,7 @@
       ]
     },
     "BirdwatchFetchMediaMatchSlice": {
-      "queryId": "3F4pfe5cLTaufqnneMC4Vg",
+      "queryId": "Uj_i9cuip49ChWGCany08w",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -656,6 +677,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -683,6 +705,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -694,11 +717,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "BirdwatchFetchNoteTranslation": {
-      "queryId": "QECo2RdeIpEbTca8Gvn-WA",
+      "queryId": "77CUJOf_U7dZE66MriL3ug",
       "operationType": "query",
       "featureSwitches": [
         "responsive_web_birdwatch_translation_enabled",
@@ -710,11 +734,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "BirdwatchFetchNotes": {
-      "queryId": "ugWvda1XqBHuEalxFOp2uQ",
+      "queryId": "FXliMyVVZbAxaiRcs9USqA",
       "operationType": "query",
       "featureSwitches": [
         "responsive_web_birdwatch_live_note_enabled",
@@ -733,11 +758,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "BirdwatchFetchOneNote": {
-      "queryId": "1lt6XSRik4s93WG0BrEvig",
+      "queryId": "eKB7Azg-Y5Yy0PhXFVDxiQ",
       "operationType": "query",
       "featureSwitches": [
         "responsive_web_birdwatch_media_notes_enabled",
@@ -755,11 +781,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "BirdwatchFetchProminentMediaMatchSlice": {
-      "queryId": "ksHznaTVHe6YiyraLd0WfA",
+      "queryId": "utpwfJxXxW3yfbBuGZWMsg",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -771,6 +798,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -798,6 +826,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -809,6 +838,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -829,7 +859,7 @@
       "fieldToggles": []
     },
     "BirdwatchFetchSimilarMediaMatchSlice": {
-      "queryId": "U9yJas0XMfdtXbTFnqEYPw",
+      "queryId": "5uQQOXeagD8b2rb2NrOQYg",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -841,6 +871,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -868,6 +899,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -879,11 +911,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "BirdwatchFetchSourceLinkSlice": {
-      "queryId": "0qeJrjgtsdnnZL-0cF4Urw",
+      "queryId": "g9uLs-wSr_NQmgYz30VL8g",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -895,6 +928,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -922,6 +956,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -933,6 +968,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -945,7 +981,7 @@
       "fieldToggles": []
     },
     "BirdwatchFetchSuggestionFeedbackOverview": {
-      "queryId": "G_hp0DUgE41jPFRqaKlZuw",
+      "queryId": "XIjAXtmF2guG-m5d1PVRiw",
       "operationType": "query",
       "featureSwitches": [
         "responsive_web_birdwatch_media_notes_enabled",
@@ -961,6 +997,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -989,6 +1026,7 @@
         "responsive_web_graphql_timeline_navigation_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled"
       ],
       "fieldToggles": [
@@ -999,6 +1037,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -1015,7 +1054,7 @@
       "fieldToggles": []
     },
     "BlockedAccountsAll": {
-      "queryId": "VlsRzrlUBsLKHvQdoYdSGw",
+      "queryId": "exDAeZuprdrqzXJu4UiNUQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1034,6 +1073,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1056,11 +1096,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1071,7 +1113,7 @@
       ]
     },
     "BlockedAccountsImported": {
-      "queryId": "S05B7hxH_1XPxdMiKT-VlQ",
+      "queryId": "WEOd2IcmkM7ECwKhoEPZNg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1090,6 +1132,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1112,11 +1155,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1127,7 +1172,7 @@
       ]
     },
     "BlueVerifiedFollowers": {
-      "queryId": "DWeIe6l1rsZMqHPbbWXtig",
+      "queryId": "HP_mH6gi0qyrYpnRxVovew",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1146,6 +1191,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1168,11 +1214,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1183,7 +1231,7 @@
       ]
     },
     "BookmarkFolderTimeline": {
-      "queryId": "IFi-VUU3mvmdJKbLYFVuFw",
+      "queryId": "nz7Djl5BU-GrZck9H4HnUA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1202,6 +1250,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1224,11 +1273,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1245,7 +1296,7 @@
       "fieldToggles": []
     },
     "BookmarkSearchTimeline": {
-      "queryId": "rbwiGBFqb93lmG7mw_OYZQ",
+      "queryId": "pgYWLRBVcyTTpHZPbfstqA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1264,6 +1315,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1286,11 +1338,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1301,7 +1355,7 @@
       ]
     },
     "Bookmarks": {
-      "queryId": "-dgKZ58Dr9YSJYrcgEb5KA",
+      "queryId": "fjf5b5Lu82lYMSBRhppK2g",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1320,6 +1374,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1342,11 +1397,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1369,7 +1426,7 @@
       "fieldToggles": []
     },
     "BroadcastQuery": {
-      "queryId": "AM9K06mJ5irJYBKCbsHDXg",
+      "queryId": "zov7jwKdTlWkL1pfblnigA",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -1381,6 +1438,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1408,11 +1466,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withArticleRichContentState",
         "withArticlePlainText",
         "withArticleSummaryText",
@@ -1421,6 +1481,12 @@
         "withDisallowedReplyControls",
         "withAuxiliaryUserLabels"
       ]
+    },
+    "BroadcastReplayEdit": {
+      "queryId": "CZFRymYV43d3egrZbhsnPg",
+      "operationType": "mutation",
+      "featureSwitches": [],
+      "fieldToggles": []
     },
     "BroadcastUpdateViewerSession": {
       "queryId": "MRPwWxSUacJB61vTj1mF9g",
@@ -1440,6 +1506,12 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "BudgetsByCurrency": {
+      "queryId": "WKAPUeb7AOpuxWasFAJ1Dw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "ClearGrokConversations": {
       "queryId": "83Gg0lfI-47Z3-ZOxyUjiQ",
       "operationType": "mutation",
@@ -1447,7 +1519,7 @@
       "fieldToggles": []
     },
     "CombinedLists": {
-      "queryId": "IE9J0zrvnuPfecKB7tzp6Q",
+      "queryId": "r4OjZGZWNqdV6smWr30C3w",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1466,6 +1538,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1488,11 +1561,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1503,7 +1578,7 @@
       ]
     },
     "CommunitiesExploreTimeline": {
-      "queryId": "YW_z_5V8wFrWjB61iDZgKA",
+      "queryId": "avFDyRH_Xk0blLaKBb6gkA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1522,6 +1597,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1544,11 +1620,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1559,7 +1637,7 @@
       ]
     },
     "CommunitiesMainDiscoveryModule": {
-      "queryId": "LN7INNJ8OAC0nPvvuQLuUw",
+      "queryId": "hmNQuEaZfw4O4SwL2AzxWg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1578,6 +1656,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1600,11 +1679,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1615,7 +1696,7 @@
       ]
     },
     "CommunitiesMainPageTimeline": {
-      "queryId": "9JvMW5-oFQMLsQlXYLV4dw",
+      "queryId": "tatwWmXnorp8IiNlvngZZw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1634,6 +1715,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1656,11 +1738,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1671,7 +1755,7 @@
       ]
     },
     "CommunitiesMembershipsSlice": {
-      "queryId": "njA6yQGGzMux6jgelblxNw",
+      "queryId": "8-kNxc96lbqWqGPNyRkTVA",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -1682,11 +1766,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunitiesMembershipsTimeline": {
-      "queryId": "sBEOBQH1XaSEk99_8ff9uw",
+      "queryId": "fioG-G0_wgxZ-sQo-5g5Pg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1705,6 +1790,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1727,11 +1813,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1742,7 +1830,7 @@
       ]
     },
     "CommunitiesRankedTimeline": {
-      "queryId": "paVBuUYJtczqBXrRt5DKog",
+      "queryId": "nX8t5Us2Sb0-LwFy6YSbLA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1761,6 +1849,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1783,11 +1872,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1798,7 +1889,7 @@
       ]
     },
     "CommunityAboutTimeline": {
-      "queryId": "OU9rsaoQfLfJx2QrlOE7VA",
+      "queryId": "K05dSl4ojiEs2GConYTQeA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1817,6 +1908,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1839,11 +1931,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1878,7 +1972,7 @@
       "fieldToggles": []
     },
     "CommunityByRestId": {
-      "queryId": "kbGfpn9QxGj0vp65v6FfKA",
+      "queryId": "iMDyRADcGz4r9ZrJMpxz1A",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -1889,11 +1983,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityCreateRule": {
-      "queryId": "1Di-irtNGY8wjhtNT0nqPQ",
+      "queryId": "bAviGE8lhUdwJmGtYwdhDw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -1904,11 +1999,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityDiscoveryTimeline": {
-      "queryId": "TCKklR6uBfl6WpQZMuuX4g",
+      "queryId": "8LcJBzj6qJuxobaWelUjew",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -1927,6 +2023,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -1949,11 +2046,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -1964,7 +2063,7 @@
       ]
     },
     "CommunityEditBannerMedia": {
-      "queryId": "wvUOMVAlXf4bnPN3wV-XhA",
+      "queryId": "crsWMaxUlcLPnsylMcNlEw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -1975,11 +2074,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityEditName": {
-      "queryId": "VBg74mGfNwfbCEACJR0EzA",
+      "queryId": "amli-DxLZmf-6plKBJVhTw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -1990,11 +2090,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityEditPurpose": {
-      "queryId": "_aaxpXD8K1h7l1gr6ogw2A",
+      "queryId": "W0xo3qTwAkn-WMm2_-lIZg",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2005,11 +2106,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityEditQuestion": {
-      "queryId": "0t10YmA6iGUc4sgaKWxasg",
+      "queryId": "QJqHk5aUDYVU5L_SLloQ7Q",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2020,11 +2122,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityEditRule": {
-      "queryId": "YHNr5ryQCoK1OnRxsfCfrA",
+      "queryId": "oalhYbYkwDSgFsoO9FFc9A",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2035,11 +2138,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityHashtagsTimeline": {
-      "queryId": "_uUARW8zWvHDZnh83lfx8w",
+      "queryId": "IMZEHGa1lyeldnXAJSIdCg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2058,6 +2162,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2080,11 +2185,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2095,7 +2202,7 @@
       ]
     },
     "CommunityMediaLoggedOutTimeline": {
-      "queryId": "tNRMjx92shdm0gjNXV6_ow",
+      "queryId": "WjzIA02DacmJxfZNzMSA4g",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2114,6 +2221,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2136,11 +2244,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2151,7 +2261,7 @@
       ]
     },
     "CommunityMediaTimeline": {
-      "queryId": "9a4dhEcbxvATiUemDoRhCA",
+      "queryId": "m_IF9tFIf_iDPaRbree99g",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2170,6 +2280,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2192,11 +2303,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2217,7 +2330,7 @@
       ]
     },
     "CommunityModerationKeepTweet": {
-      "queryId": "OxfZrTxWOtItFWjFg-Qa7g",
+      "queryId": "guIquIb4YgcIhq-UHXT-mA",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2228,11 +2341,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityModerationTweetCasesSlice": {
-      "queryId": "K4ziK7QfvJwqnxgx8nz-Ag",
+      "queryId": "ONXUz2ra-UOc4Inc59gTaA",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -2244,6 +2358,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2271,6 +2386,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -2282,11 +2398,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityRemoveBannerMedia": {
-      "queryId": "MyWoL0Tl-ul4y2jiBAT6uw",
+      "queryId": "ldKQTORuHp6D6cU86gh3FQ",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2297,11 +2414,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityRemoveRule": {
-      "queryId": "AuuV8_Hj4I7Z1HA5yfScow",
+      "queryId": "dAVZg1IecFWOftHoNgz9Vg",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2312,11 +2430,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityReorderRules": {
-      "queryId": "Ht9R_81jWiJeAe27SFbPEg",
+      "queryId": "BmlTKv5TiVlAnWf1CblX6Q",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2327,11 +2446,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CommunityTweetModerationLogSlice": {
-      "queryId": "fdzruj5Lhqc4AHF_bt-8Hg",
+      "queryId": "KyDUss7g2i7xDRPRa4ImZQ",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -2347,6 +2467,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2370,11 +2491,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2385,7 +2508,7 @@
       ]
     },
     "CommunityTweetsLoggedOutTimeline": {
-      "queryId": "eZck8aiw_r7ycSGH5xS20Q",
+      "queryId": "YzOKJD1K5krSt-InMkEM5w",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2404,6 +2527,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2426,11 +2550,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2441,7 +2567,7 @@
       ]
     },
     "CommunityTweetsRankedLoggedOutTimeline": {
-      "queryId": "26REPOdHpFBTaZu9-sDgLQ",
+      "queryId": "xp_pIeYOmshoVZJpl2oGVA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2460,6 +2586,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2482,11 +2609,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2497,7 +2626,7 @@
       ]
     },
     "CommunityTweetsTimeline": {
-      "queryId": "VgO2y9wXrpUPlzZmfHtKKA",
+      "queryId": "bKYFeT4aNUQDMHx4gyXIoQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2516,6 +2645,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2538,11 +2668,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2553,7 +2685,7 @@
       ]
     },
     "CommunityUpdateRole": {
-      "queryId": "lcG5VEeCjYu9EVbDbY1SQQ",
+      "queryId": "B-hDLcK_UDsjH8mL52z9hw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2564,6 +2696,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -2588,7 +2721,7 @@
       ]
     },
     "ConnectTabTimeline": {
-      "queryId": "2a5nvYPVhrgXZqTUg8O5ZA",
+      "queryId": "A_0eI5aoTb8yUzDUzwm5yw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -2607,6 +2740,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -2629,11 +2763,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -2644,7 +2780,7 @@
       ]
     },
     "ConversationControlChange": {
-      "queryId": "57WYJNnWH0vM3Ip_gm8B2g",
+      "queryId": "JWeo7tCAhI_HwcuPcL4JrQ",
       "operationType": "mutation",
       "featureSwitches": [],
       "fieldToggles": []
@@ -2668,7 +2804,7 @@
       "fieldToggles": []
     },
     "CreateCommunity": {
-      "queryId": "KSxZe_5xvTq2UjyFLf4qqA",
+      "queryId": "UmeMHNkWqTAZn_Azz3YhBg",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2679,6 +2815,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -2701,7 +2838,7 @@
       "fieldToggles": []
     },
     "CreateList": {
-      "queryId": "AkWrYT3WjoBVkzbnbvLkhg",
+      "queryId": "zdGzorOEOslDL4XEbe2INw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2712,11 +2849,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "CreateNoteTweet": {
-      "queryId": "u-Vsy3HZId2j10nbdqMI0A",
+      "queryId": "seOZkIS8AysCGfPo6yYPVA",
       "operationType": "mutation",
       "featureSwitches": [
         "premium_content_api_read_enabled",
@@ -2727,6 +2865,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "responsive_web_edit_tweet_api_enabled",
@@ -2755,6 +2894,7 @@
         "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
       "fieldToggles": [
@@ -2765,6 +2905,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -2786,8 +2927,14 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "CreateShareLink": {
+      "queryId": "HEXyjS9m5F2kJsx8FnqRJQ",
+      "operationType": "mutation",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "CreateTweet": {
-      "queryId": "GYdIGqVWfZNho79bQ2XDoA",
+      "queryId": "l4hk8uVGvR-a8kzQ4nOhPA",
       "operationType": "mutation",
       "featureSwitches": [
         "premium_content_api_read_enabled",
@@ -2798,6 +2945,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "responsive_web_edit_tweet_api_enabled",
@@ -2826,6 +2974,7 @@
         "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
       "fieldToggles": [
@@ -2836,6 +2985,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -2906,7 +3056,7 @@
       "fieldToggles": []
     },
     "DeleteListBanner": {
-      "queryId": "WOYgFH176i6zOy8uXXj6Jg",
+      "queryId": "my6Lh9X_pvMtrK_c3VjfNA",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -2917,6 +3067,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -2957,7 +3108,7 @@
       "fieldToggles": []
     },
     "DmAllSearchSlice": {
-      "queryId": "Et6j9GzC_5KNLHFW92VDww",
+      "queryId": "Vgd0g_8lqGHd2MZQ8fTGzw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_cashtags_enabled",
@@ -2967,10 +3118,12 @@
         "verified_phone_label_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -2981,7 +3134,7 @@
       "fieldToggles": []
     },
     "DmMutedTimeline": {
-      "queryId": "v0LGdN9cxvihNavXFx9TJw",
+      "queryId": "rpeDHdXeiyhJP93Apf3C4Q",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3000,6 +3153,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3022,11 +3176,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3067,7 +3223,7 @@
       "fieldToggles": []
     },
     "EditListBanner": {
-      "queryId": "ae7cJFHLC0_TSXXOpKlPHQ",
+      "queryId": "PSBi0stSrf3-hDy3G_O_0Q",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -3078,6 +3234,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -3100,7 +3257,7 @@
       "fieldToggles": []
     },
     "ExplorePage": {
-      "queryId": "7JBlImZfRkZIptknshoqCA",
+      "queryId": "CVExg1KY6Ec9BioRBbI8Jg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3119,6 +3276,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3141,11 +3299,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3156,7 +3316,7 @@
       ]
     },
     "ExploreSidebar": {
-      "queryId": "zJF1HRGpRjCStcTNm5aekA",
+      "queryId": "cM7LCaFTQnUWRA1jMWH6Pg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3175,6 +3335,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3197,11 +3358,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3218,7 +3381,7 @@
       "fieldToggles": []
     },
     "Favoriters": {
-      "queryId": "a2IHRwTdhkcv0Zt0mI-Vrg",
+      "queryId": "JGLhZd8aiYqBdjBBcRTwNg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3237,6 +3400,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3259,11 +3423,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3304,7 +3470,7 @@
       "fieldToggles": []
     },
     "Followers": {
-      "queryId": "fVGYs5W9kNUuoUrZwYZQpQ",
+      "queryId": "Xe3y9_ndZ9-RtWz8zd_wpg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3323,6 +3489,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3345,11 +3512,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3360,7 +3529,7 @@
       ]
     },
     "FollowersYouKnow": {
-      "queryId": "hEiuVHcQAxCsfSE9aL2e_g",
+      "queryId": "N-5YQGqcnNO164XwsevHCA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3379,6 +3548,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3401,11 +3571,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3416,7 +3588,7 @@
       ]
     },
     "Following": {
-      "queryId": "-Mn4uN7C-vxXBwUKtSwS6A",
+      "queryId": "eDqlbOS46zda8jDT8dEQ_Q",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3435,6 +3607,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3457,11 +3630,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3478,7 +3653,7 @@
       "fieldToggles": []
     },
     "GenericTimelineById": {
-      "queryId": "6KKcBTcCsVtXvAx4aFDzRQ",
+      "queryId": "UToImY30uYcerTaw8gu21w",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3497,6 +3672,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3519,11 +3695,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3534,7 +3712,7 @@
       ]
     },
     "GetUserClaims": {
-      "queryId": "aQ-b88K_Lp7dgHX53MqNQQ",
+      "queryId": "AqTNiqohgRK_0DarLzqUvg",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -3558,7 +3736,7 @@
       "fieldToggles": []
     },
     "GlobalCommunitiesLatestPostSearchTimeline": {
-      "queryId": "tKfhQuBk1YpT2yhpMng0Gw",
+      "queryId": "60lEf-uOZXGMD_KQoO1WSw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3577,6 +3755,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3599,11 +3778,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3614,7 +3795,7 @@
       ]
     },
     "GlobalCommunitiesPostSearchTimeline": {
-      "queryId": "tbfwt3lMoSiVODtsBmEFGQ",
+      "queryId": "Tm8OZBTJ5F_dQNdP1KEoug",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3633,6 +3814,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3655,11 +3837,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3670,7 +3854,7 @@
       ]
     },
     "GrokConversationItemsByRestId": {
-      "queryId": "1pM6co4Aw6kxFJIG_ZlERQ",
+      "queryId": "LXb-pfaedDsQKHE_rCJhcQ",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -3682,6 +3866,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3709,6 +3894,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -3720,6 +3906,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -3754,7 +3941,7 @@
       "fieldToggles": []
     },
     "GrokShare": {
-      "queryId": "gmv0UcVbGLX-hkM44PB5mA",
+      "queryId": "ntxBSOBXeC8lxsdwrjbTHA",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -3766,6 +3953,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3793,6 +3981,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -3804,6 +3993,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -3820,7 +4010,7 @@
       "fieldToggles": []
     },
     "HomeLatestTimeline": {
-      "queryId": "OQPHTgwczzp9RMAPt6BH9A",
+      "queryId": "IVA5BUbeYPTrpYekQH7jiA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3839,6 +4029,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3861,11 +4052,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3876,7 +4069,7 @@
       ]
     },
     "HomeTimeline": {
-      "queryId": "og4a4SdSF3WiQkkwaPCdPg",
+      "queryId": "KmJCeZ__ef1fNos7tKN_fg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3895,6 +4088,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3917,11 +4111,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3932,7 +4128,7 @@
       ]
     },
     "ImmersiveMedia": {
-      "queryId": "Aq0UFPTrgsvIxP3ADLKflg",
+      "queryId": "i2LFCbu4bShqaSoQ0tMCKw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -3951,6 +4147,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -3973,11 +4170,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -3988,7 +4187,7 @@
       ]
     },
     "ImmersiveProfile": {
-      "queryId": "eCPaUD8j7e0QafyJ01Udcw",
+      "queryId": "3BB1EY8yL2qidVLV63GJmg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4007,6 +4206,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4029,11 +4229,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4044,7 +4246,7 @@
       ]
     },
     "JoinCommunity": {
-      "queryId": "tas06cdyWKlygZ2ldJ5B4A",
+      "queryId": "3jItWhb1PKC9lute3hWWXA",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4055,11 +4257,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "LeaveCommunity": {
-      "queryId": "9F6Fdu6ibMAKEpb9nFjUdQ",
+      "queryId": "0qehtlwzUschfhKTAv0lKQ",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4070,11 +4273,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "Likes": {
-      "queryId": "XHn_Tw60c6pi0n3DGhpwiA",
+      "queryId": "ZjyvI1V9gajq5eclHCObzA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4093,6 +4297,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4115,11 +4320,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4130,7 +4337,7 @@
       ]
     },
     "ListAddMember": {
-      "queryId": "F4BvT6Af48GSxTgqNLIdrQ",
+      "queryId": "-Kf1YVC1rNKkPvPFk7YXZw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4141,11 +4348,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ListByRestId": {
-      "queryId": "EAARFZGlY-JHdLJbKZAA5g",
+      "queryId": "T-YE5ZY0cd0UVtWu8AP04Q",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4156,11 +4364,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ListBySlug": {
-      "queryId": "-ktNZt6lRPC1skF0gStEvg",
+      "queryId": "ZX5ei7t018bDaDcy4VWBeA",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4171,11 +4380,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ListCreationRecommendedUsers": {
-      "queryId": "3SJYvL3yI52QWPVluWQGVw",
+      "queryId": "tEkcpXd8f-TzE_-mkuOTLw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4194,6 +4404,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4216,11 +4427,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4231,7 +4444,7 @@
       ]
     },
     "ListEditRecommendedUsers": {
-      "queryId": "Flws5mm0ALoOVWY7kmm-aQ",
+      "queryId": "NS40Y5Fgobu1XJUmT_DQyw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4250,6 +4463,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4272,11 +4486,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4287,7 +4503,7 @@
       ]
     },
     "ListLatestTweetsTimeline": {
-      "queryId": "qIrerw_1oakhehcLoFbaOw",
+      "queryId": "UMc_lPEeKz_WiKSY8ZT7yw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4306,6 +4522,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4328,11 +4545,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4343,7 +4562,7 @@
       ]
     },
     "ListMembers": {
-      "queryId": "QUEL7b9q4yBmJ7AP2u5Jtg",
+      "queryId": "vgA6FHTOKJQ1rJ7iiHc0xw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4362,6 +4581,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4384,11 +4604,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4399,7 +4621,7 @@
       ]
     },
     "ListMemberships": {
-      "queryId": "dBtqkQ7YcJqQ2-Yb-itgzg",
+      "queryId": "UcQucBOWpQ1_KoYuNyrNMw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4418,6 +4640,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4440,11 +4663,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4455,7 +4680,7 @@
       ]
     },
     "ListOwnerships": {
-      "queryId": "Jq6qUEOQL444DqwQQrb70g",
+      "queryId": "JyQg9kTLrzFPtt8QydtiNA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4474,6 +4699,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4496,11 +4722,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4520,7 +4748,7 @@
       "fieldToggles": []
     },
     "ListRankedTweetsTimeline": {
-      "queryId": "K3JUG9l3MeWDoLKeFYex9g",
+      "queryId": "KZFKX5-0JtgCLJ4Vyh25Nw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4539,6 +4767,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4561,11 +4790,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4576,7 +4807,7 @@
       ]
     },
     "ListRemoveMember": {
-      "queryId": "llA1p2EP5J3gReAQQsW1vw",
+      "queryId": "_2o1-wSMWGFSi5HUscn1Hw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4587,11 +4818,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ListSearchTimeline": {
-      "queryId": "i4096Pm5N66WDAdjumVLrQ",
+      "queryId": "jFPCAdAJea4Pi9P6L0FlsQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4610,6 +4842,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4632,11 +4865,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4647,7 +4882,7 @@
       ]
     },
     "ListSubscribe": {
-      "queryId": "1B3FqCK_7uU6W_AHqWBx8A",
+      "queryId": "k5mwUiaPTQ_Hhr8DNXQ5YA",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4658,11 +4893,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ListSubscribers": {
-      "queryId": "U1R6slIDy8ufW8qv3Pio0A",
+      "queryId": "QSCka9VX6mjOARoPtihe0Q",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4681,6 +4917,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4703,11 +4940,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4718,7 +4957,7 @@
       ]
     },
     "ListUnsubscribe": {
-      "queryId": "8gopUa1KU_9afKsxI9Y_Rg",
+      "queryId": "HwX1NRCSksXzmpolnY0Xhw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -4729,11 +4968,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ListsDiscovery": {
-      "queryId": "t17vjm7RfipvkKzu7P3O2g",
+      "queryId": "qhh973x9m-R6SVBXpJHxdw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4752,6 +4992,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4774,11 +5015,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4789,7 +5032,7 @@
       ]
     },
     "ListsManagementPageTimeline": {
-      "queryId": "XfmuvArU-jDYCIrF2BdN1A",
+      "queryId": "HeY9oqJxWKHSTCoBXaWnHg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4808,6 +5051,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4830,11 +5074,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4850,8 +5096,80 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "MLBGameHydrate": {
+      "queryId": "Lj3UyfijNawe_Nov84F7-w",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBGameOdds": {
+      "queryId": "ROiXANCNUoqr28usraFW-Q",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBGamePlayerProps": {
+      "queryId": "U2niAYPZ3GDoQphnZuVRBQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBLeaders": {
+      "queryId": "QIU6Qc5Bdwd-zcls7jtCwA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBLiveGame": {
+      "queryId": "Y48JDK9LNvh1IAuRAVOJjQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBMatchup": {
+      "queryId": "h-qGvM4sZDshcH8R2epuXA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBPlayerProfile": {
+      "queryId": "C6sGvj7Qq3J4MZWHmxa2pA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBPostseasonRounds": {
+      "queryId": "thgZnfjQjxqkh0hmoVvGew",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBSchedule": {
+      "queryId": "LF20hIABrq6kjc7fhInf7Q",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBScheduleDays": {
+      "queryId": "iFzaptv3YWPZEHn0msgOXA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBStandings": {
+      "queryId": "o_Gw2WYhPTFqKKhMR_udrQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "MLBTeams": {
+      "queryId": "bSzG6BGhJO0it5IPuYnniw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "MediaTabVideoMixer": {
-      "queryId": "fGRGW6Se0cRPDbyIK3wjTA",
+      "queryId": "CMwUo_TjYXAeK7lOe8KNiw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4870,6 +5188,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4892,11 +5211,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4906,6 +5227,12 @@
         "withDisallowedReplyControls"
       ]
     },
+    "MlbScoresSidebarLiveGame": {
+      "queryId": "vSoV7RqhrtJTMFUheOH1uQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "ModerateTweet": {
       "queryId": "pjFnHGVqCjTcZol0xcBJjw",
       "operationType": "mutation",
@@ -4913,7 +5240,7 @@
       "fieldToggles": []
     },
     "ModeratedTimeline": {
-      "queryId": "kO0Oq6PcLpvQacRyW3LIPw",
+      "queryId": "PFe_4rTGtvczfkQ1_rvjNA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4932,6 +5259,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -4954,11 +5282,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -4975,7 +5305,7 @@
       "fieldToggles": []
     },
     "MutedAccounts": {
-      "queryId": "doSy_eEELN6ol2addK5OfA",
+      "queryId": "1heSSJ80TWeDGtoR7-X-iA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -4994,6 +5324,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5016,11 +5347,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5030,8 +5363,110 @@
         "withDisallowedReplyControls"
       ]
     },
+    "NBAGameHydrate": {
+      "queryId": "_OwS8C_PTBRufp3MmL1LHg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBAGameOdds": {
+      "queryId": "8sg1B8NeAy_7svAOaATcRQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBALeaders": {
+      "queryId": "8P5rl5tJq3sQWLMJlVAVFQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBALiveGame": {
+      "queryId": "wxe4oebQjqixEFFwX3X-cg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBAMatchup": {
+      "queryId": "s_wYyMUDHan3H55qrVwxGA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBAMatchupSeason": {
+      "queryId": "B7RbxuXNuo4MM6rN5aD7yQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBAPlayerProfile": {
+      "queryId": "BcxJEf-wHL8HZGdOeIYqrQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBASchedule": {
+      "queryId": "z2uHpdbDXFyZaqg-sGpI1g",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBAScheduleDays": {
+      "queryId": "qhFzddzyZtrlvMYPcot-Dw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBAStandings": {
+      "queryId": "_rEuzW6cB1w9MyEekBmuBg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NBATeams": {
+      "queryId": "A8gadjO6ZcCoqljMRGfCDQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NCAAFBGameHydrate": {
+      "queryId": "N8vvLFO39cCqqPO75z6EuA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NCAAFBGameOdds": {
+      "queryId": "49i53I9H-Q81ov3qL5mugA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NCAAFBLiveGame": {
+      "queryId": "xj-PBD8Y9Vay8cc63b1n6w",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NCAAFBSchedule": {
+      "queryId": "bEwBKKlcX53j_Ku-VLF7rg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NCAAFBSeasonStats": {
+      "queryId": "BuJzI4ehbQSFAC1UJ0tqcQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NCAAFBStandings": {
+      "queryId": "uaLhNWnygGXoyIYcpxUhQg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "NFLGameHydrate": {
-      "queryId": "XtriwVR_hoq5nQhz8Q-dZg",
+      "queryId": "CN2G3v-dUfNQe3NNv-Lxqw",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -5043,13 +5478,13 @@
       "fieldToggles": []
     },
     "NFLGamePlayerProps": {
-      "queryId": "sdnp1Oz1pRRCxzBlqB_zBQ",
+      "queryId": "Bjp0zCvdw41fzm_Mgo8AWw",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
     },
     "NFLGameRoster": {
-      "queryId": "8pLIKp-Khhl_ANf4ZeSgVg",
+      "queryId": "CiBu_xfyiOu_rBNyuBngcQ",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -5060,11 +5495,18 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "NFLLiveGame": {
       "queryId": "1ssBFzuY0MFqgTl9h6a3hw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NFLMatchupSeason": {
+      "queryId": "ZgAomd4chOrVRid_l06NGw",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -5099,6 +5541,12 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "NFLWeeklyInjuries": {
+      "queryId": "2poNqI6fpHMh4K3ibcBC3g",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "NFLWeeklySchedule": {
       "queryId": "hsXGNRAhwRCPm9pv-pof4g",
       "operationType": "query",
@@ -5111,14 +5559,98 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "NHLGameHydrate": {
+      "queryId": "CZmroSaRbcBJ47uHySscQA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLGameOdds": {
+      "queryId": "XP2l_9mnJQ6lpzzcjvW23A",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLLeaders": {
+      "queryId": "bP7XAEEu6c2zmTIJAonjTw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLLiveGame": {
+      "queryId": "f6yGemoG7HgzooklbNBXBg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLMatchup": {
+      "queryId": "pEa2kJfT4-xiCYZDGLCltQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLMatchupSeason": {
+      "queryId": "_gHQs3TaecHtHyyxE3SyrQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLPlayerProfile": {
+      "queryId": "nP96L3rZHDqr_5BrOT2t4Q",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLSchedule": {
+      "queryId": "boveFhwzKCvPaTymCzp5PA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLScheduleDays": {
+      "queryId": "yB7TdSWKSlnpNekFGbXf1Q",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLStandings": {
+      "queryId": "A2sgUwGOU43kMNh0dXIvAg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NHLTeams": {
+      "queryId": "HabSdrOugMP1Jj_BUifKgw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NbaScoresSidebarLiveGame": {
+      "queryId": "DO7bmkTX4kiEnl7yZGmiGg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NbaScoresSidebarSchedule": {
+      "queryId": "QPbMjws1gnsWkF9r_bMrlw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "NflScoresSidebarFollow": {
       "queryId": "JR_EpH80gwgFyOBOreLBZw",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "NflScoresSidebarLiveGame": {
+      "queryId": "W1N4RqPcDwRAoadnEiw4Sw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "NflTop100": {
-      "queryId": "EcIeJEU1Xb2XpGhs7I3cfw",
+      "queryId": "WPr9iqmOmcf8YshbvWB9rQ",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -5134,6 +5666,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5157,11 +5690,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5171,6 +5706,18 @@
         "withDisallowedReplyControls"
       ]
     },
+    "NhlScoresSidebarLiveGame": {
+      "queryId": "2snRYWh1sR0N4EiJHEIHdQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "NhlScoresSidebarSchedule": {
+      "queryId": "J9WzdMoFi6DjYKOxKhqA1Q",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "NotABotCheckoutUrlWithEligibility": {
       "queryId": "RM4x9h3tF8bCn69VV3-gRg",
       "operationType": "mutation",
@@ -5178,7 +5725,7 @@
       "fieldToggles": []
     },
     "NotificationsTimeline": {
-      "queryId": "MSUPE4KwuxyghDO60Bv5uQ",
+      "queryId": "XANkUc-HLIcCl8q85rGC2A",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5197,6 +5744,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5219,11 +5767,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5256,7 +5806,7 @@
       "fieldToggles": []
     },
     "PinTimeline": {
-      "queryId": "ZMYcJPUQ0QIAyWekMdAuDw",
+      "queryId": "qaz5JhPxqI3UqAgkTpsGyQ",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -5267,6 +5817,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -5277,7 +5828,7 @@
       "fieldToggles": []
     },
     "PinnableTimelines": {
-      "queryId": "XUpSmUE_n6ez-U_SdC7G7g",
+      "queryId": "HQ-MFOr09c_gbFjDGPJn-w",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -5288,11 +5839,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "PinnedTimelines": {
-      "queryId": "1C9qXYjxcujNpyJWE6tAeg",
+      "queryId": "8J1r9u3VjUveEdTY4WUTwQ",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -5303,11 +5855,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ProfileFilter": {
-      "queryId": "O6BaAhZzuUp7_TTTynMF2g",
+      "queryId": "_-RMD5S0IgQHXFZl3dxhPg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5326,6 +5879,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5348,11 +5902,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5387,7 +5943,7 @@
       "fieldToggles": []
     },
     "QuickPromoteBoostContentCheck": {
-      "queryId": "A0Jwb3KL6wHWyFmc0_lHgw",
+      "queryId": "TUZ0ApqccaHdSfkwmH9aGg",
       "operationType": "query",
       "featureSwitches": [
         "responsive_web_graphql_timeline_navigation_enabled",
@@ -5398,6 +5954,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -5432,7 +5989,7 @@
       "fieldToggles": []
     },
     "RequestToJoinCommunity": {
-      "queryId": "Hq9TxlOEQeB4yvceKWvfXw",
+      "queryId": "QclqoN95uHtO18c5AFihUw",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -5443,11 +6000,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "Retweeters": {
-      "queryId": "uDkA6VZo0_WxiXCKl_7ZTA",
+      "queryId": "VzgCyBwfqzAvPjK2E4U2vA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5466,6 +6024,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5488,11 +6047,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5509,7 +6070,7 @@
       "fieldToggles": []
     },
     "SearchTimeline": {
-      "queryId": "auLkqtmHqYEpRvflfvLhyQ",
+      "queryId": "vLHjqbDv7TPFMBkIIO1nOA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5528,6 +6089,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5550,11 +6112,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5583,7 +6147,7 @@
       "fieldToggles": []
     },
     "SidebarUserRecommendations": {
-      "queryId": "XFGj2pdlasiM3FndUe1PrQ",
+      "queryId": "BSYrSirC_dVN6R9Q0Mpmvg",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -5594,11 +6158,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "SimilarPosts": {
-      "queryId": "pnl_SipPG1I4d2CBGCEgQw",
+      "queryId": "s0XLZsYFk5xfbREPFOZJvA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5617,6 +6182,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5639,11 +6205,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5653,8 +6221,32 @@
         "withDisallowedReplyControls"
       ]
     },
+    "SoccerLeaders": {
+      "queryId": "P1WcelZybikR-GpqJ19K7A",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SoccerMatchweeks": {
+      "queryId": "l4UfmwkgQ7RudV3ddLCueQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SoccerSchedule": {
+      "queryId": "BgmEf4z1co-6iwhKArsXPg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SoccerStandings": {
+      "queryId": "0sh90UjWpuHzJhn8ZCf0Rg",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "SportsGameLatestTimeline": {
-      "queryId": "88A8jP4CwKZQ1fpHkpCGog",
+      "queryId": "k6C1mvZZWs6ntVOD13kuYw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5673,6 +6265,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5695,11 +6288,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5710,7 +6305,7 @@
       ]
     },
     "SportsGameTopTimeline": {
-      "queryId": "VdmA2C3ugvm2cQzL_ew-qw",
+      "queryId": "r6AznuD-gYoQ352RJpxqUg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5729,6 +6324,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5751,11 +6347,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5765,8 +6363,20 @@
         "withDisallowedReplyControls"
       ]
     },
+    "SportsHubBySport": {
+      "queryId": "jn8sGMIC8-f2CzSZw2L6Rw",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "SportsHubTrends": {
       "queryId": "BjydpXiXlskVEro9jODW8g",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsLeagueFollow": {
+      "queryId": "ROSPydUYihwVnF1940yA3A",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -5784,13 +6394,13 @@
       "fieldToggles": []
     },
     "SportsProductCreateGameReminder": {
-      "queryId": "-5tvdMlTVLfOX1wki-fyiQ",
+      "queryId": "ZyWLAyQ_WsLedy-JBkIROg",
       "operationType": "mutation",
       "featureSwitches": [],
       "fieldToggles": []
     },
     "SportsProductDeleteGameReminder": {
-      "queryId": "uSXCv-DvptcAyUAYbsHdLA",
+      "queryId": "zD6qMrNX_BPjXZ8fLPXuiQ",
       "operationType": "mutation",
       "featureSwitches": [],
       "fieldToggles": []
@@ -5807,8 +6417,77 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "SportsProductFollowedTeamsV2": {
+      "queryId": "hxmcWMm6grgAS9WLqAANfA",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "SportsProductGameReminders": {
-      "queryId": "sgwcwOMA1T8DlBek9WtATQ",
+      "queryId": "4T5v2sJ-8kOvk53OgBaLkQ",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
+    "SportsProductLeagueMediaSeries": {
+      "queryId": "qdXSWUYGY0l0pvuLYjg_fg",
+      "operationType": "query",
+      "featureSwitches": [
+        "creator_subscriptions_tweet_preview_api_enabled",
+        "premium_content_api_read_enabled",
+        "communities_web_enable_tweet_community_results_fetch",
+        "c9s_tweet_anatomy_moderator_badge_enabled",
+        "responsive_web_grok_analyze_button_fetch_trends_enabled",
+        "responsive_web_grok_analyze_post_followups_enabled",
+        "rweb_cashtags_composer_attachment_enabled",
+        "responsive_web_jetfuel_frame",
+        "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
+        "responsive_web_grok_share_attachment_enabled",
+        "responsive_web_grok_annotations_enabled",
+        "articles_preview_enabled",
+        "responsive_web_edit_tweet_api_enabled",
+        "rweb_conversational_replies_downvote_enabled",
+        "graphql_is_translatable_rweb_tweet_is_translatable_enabled",
+        "view_counts_everywhere_api_enabled",
+        "longform_notetweets_consumption_enabled",
+        "responsive_web_twitter_article_tweet_consumption_enabled",
+        "content_disclosure_indicator_enabled",
+        "content_disclosure_ai_generated_indicator_enabled",
+        "responsive_web_grok_show_grok_translated_post",
+        "responsive_web_grok_analysis_button_from_backend",
+        "post_ctas_fetch_enabled",
+        "rweb_cashtags_enabled",
+        "freedom_of_speech_not_reach_fetch_enabled",
+        "standardized_nudges_misinfo",
+        "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled",
+        "longform_notetweets_rich_text_read_enabled",
+        "longform_notetweets_inline_media_enabled",
+        "profile_label_improvements_pcf_label_in_post_enabled",
+        "responsive_web_profile_redirect_enabled",
+        "rweb_tipjar_consumption_enabled",
+        "verified_phone_label_enabled",
+        "responsive_web_nested_quote_preview_enabled",
+        "responsive_web_grok_image_annotation_enabled",
+        "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
+        "responsive_web_grok_community_note_auto_translation_is_enabled",
+        "responsive_web_graphql_timeline_navigation_enabled"
+      ],
+      "fieldToggles": [
+        "withArticleRichContentState",
+        "withArticlePlainText",
+        "withArticleSummaryText",
+        "withArticleVoiceOver",
+        "withGrokAnalyze",
+        "withDisallowedReplyControls",
+        "withPayments",
+        "withDmBlocks",
+        "withAuxiliaryUserLabels"
+      ]
+    },
+    "SportsProductLeagueTeams": {
+      "queryId": "oqWOTP-w8yXpcMJXlvBWeA",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -5843,6 +6522,12 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "SportsProductSnoozeGameReminder": {
+      "queryId": "9LCYq2VYYvKE--NhmJk8pg",
+      "operationType": "mutation",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "SportsProductTeamNotificationSettings": {
       "queryId": "o_ONtKkXGr4GQOvvihmVbA",
       "operationType": "query",
@@ -5850,7 +6535,7 @@
       "fieldToggles": []
     },
     "SportsProductTeamPicker": {
-      "queryId": "XwhsOQbv-QA-y5CmUd6mdg",
+      "queryId": "DsAAAAGGJXoSQ2v6TrkaAw",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -5894,7 +6579,7 @@
       "fieldToggles": []
     },
     "SuperFollowers": {
-      "queryId": "4A1krY2Xn7uTA4tGOM6Gzw",
+      "queryId": "PJcCoDc8Bgo5lVqb769qig",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5913,6 +6598,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -5935,11 +6621,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -5962,7 +6650,7 @@
       "fieldToggles": []
     },
     "TVHomeMixer": {
-      "queryId": "Mxc2_ki1khctdccHe5LN6A",
+      "queryId": "LD0tJCJsEULyTeG6xnBnQw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -5981,6 +6669,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6003,11 +6692,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6042,7 +6733,7 @@
       "fieldToggles": []
     },
     "TopicToFollowSidebar": {
-      "queryId": "uQ5E40nD4h9xETVm4IVAhg",
+      "queryId": "0-8plpu8LPibPMCGxofvXQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6061,6 +6752,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6083,11 +6775,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6110,7 +6804,7 @@
       "fieldToggles": []
     },
     "TrendHistory": {
-      "queryId": "2e9kT9dZau_UsQy29Ssj8Q",
+      "queryId": "lt8i2szxkF3YP8-1OUiWMA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6129,6 +6823,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6151,11 +6846,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6166,7 +6863,7 @@
       ]
     },
     "TrendRelevantUsers": {
-      "queryId": "Av5yDFt1dtyBu2vhvvTA1g",
+      "queryId": "iIj3-M3iDlDy15Gt7zN9pQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6185,6 +6882,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6207,11 +6905,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6222,7 +6922,7 @@
       ]
     },
     "TweetDetail": {
-      "queryId": "zoF7_t363wZyzylk-BLfZQ",
+      "queryId": "dQDdKtt882nl-Km98FJGSQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6241,6 +6941,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6263,11 +6964,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6278,7 +6981,7 @@
       ]
     },
     "TweetEditHistory": {
-      "queryId": "ov6xadTBRl1SNc7zOkBYNg",
+      "queryId": "wg-Ms_sNAlCSoQQA9BTd0w",
       "operationType": "query",
       "featureSwitches": [
         "premium_content_api_read_enabled",
@@ -6289,6 +6992,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "freedom_of_speech_not_reach_fetch_enabled",
@@ -6318,6 +7022,7 @@
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_graphql_timeline_navigation_enabled",
         "creator_subscriptions_tweet_preview_api_enabled",
         "responsive_web_enhance_cards_enabled"
@@ -6330,11 +7035,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "TweetResultByRestId": {
-      "queryId": "Xl0tsHf4AzflMRjbw9e70A",
+      "queryId": "U8lc5aomF5krJzZ9vJ9wxg",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -6346,6 +7052,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6373,6 +7080,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -6384,11 +7092,12 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "TweetResultsByRestIds": {
-      "queryId": "mQnBPxNdkMLfhXINDDYUSg",
+      "queryId": "yW_CmYWEKwaOpAEHpNSReg",
       "operationType": "query",
       "featureSwitches": [
         "creator_subscriptions_tweet_preview_api_enabled",
@@ -6400,6 +7109,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6427,6 +7137,7 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_graphql_timeline_navigation_enabled"
       ],
@@ -6438,6 +7149,7 @@
         "withGrokAnalyze",
         "withDisallowedReplyControls",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -6484,7 +7196,7 @@
       "fieldToggles": []
     },
     "UnpinTimeline": {
-      "queryId": "_uu6eZuimGwywEa4qtZxZA",
+      "queryId": "u_Nxpj-y-PoTFHEM9saz2Q",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -6495,6 +7207,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -6511,7 +7224,7 @@
       "fieldToggles": []
     },
     "UpdateList": {
-      "queryId": "6fJbXehrO7k4iSr_TK1U2Q",
+      "queryId": "oe5s3-_kb6-t8iFv4hLH3A",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -6522,11 +7235,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "UpdatePinnedTimelines": {
-      "queryId": "AtN-0mKI3fXXmxzYYk1Wqw",
+      "queryId": "J6-7gyMkcVWna0u0KkPU7g",
       "operationType": "mutation",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -6537,6 +7251,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -6549,7 +7264,7 @@
       "fieldToggles": []
     },
     "UrtFixtures": {
-      "queryId": "Jw90Znej2ooqJH0gx1voEA",
+      "queryId": "P4Wz6LmhxpjsXxx7QYdLpQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6568,6 +7283,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6590,11 +7306,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6611,7 +7329,7 @@
       "fieldToggles": []
     },
     "UserArticlesTweets": {
-      "queryId": "ic9_Nc9wg4whcOEBiWAP4w",
+      "queryId": "6mCid4M47t6z7U0TIQ55qA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6630,6 +7348,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6652,11 +7371,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6667,7 +7388,7 @@
       ]
     },
     "UserBusinessProfileTeamTimeline": {
-      "queryId": "v_oniRKLdCZ__sqG-6yTqQ",
+      "queryId": "I-zB8JQXsfUsQP8bBiWQkw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6686,6 +7407,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6708,11 +7430,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6723,7 +7447,7 @@
       ]
     },
     "UserByRestId": {
-      "queryId": "IdmRdjYxIGI39Hdwkwo5cQ",
+      "queryId": "mxaYWwt52eAb6OAzYHMVzg",
       "operationType": "query",
       "featureSwitches": [
         "hidden_profile_subscriptions_enabled",
@@ -6739,11 +7463,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "UserByScreenName": {
-      "queryId": "KybxDj9RrADIITXlGG8kpw",
+      "queryId": "AMIBMjtxEEATh4z8V9GtRg",
       "operationType": "query",
       "featureSwitches": [
         "hidden_profile_subscriptions_enabled",
@@ -6761,11 +7486,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "UserCreatorSubscribers": {
-      "queryId": "ZKWe719CjFmlxZM95aw_yQ",
+      "queryId": "p76dCNURUPURadTDyyWbEg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6784,6 +7510,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6806,11 +7533,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6821,7 +7550,7 @@
       ]
     },
     "UserCreatorSubscriptions": {
-      "queryId": "NteGelNq-3jzn3gbc7fyvA",
+      "queryId": "mdZ9ngiV6niOd2neFHNDSA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6840,6 +7569,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6862,11 +7592,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6877,7 +7609,7 @@
       ]
     },
     "UserHighlightsTweets": {
-      "queryId": "TtovDhtuqVtzzfZ9fpztlw",
+      "queryId": "vukXwNm6argozncYmHqZDQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6896,6 +7628,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6918,11 +7651,72 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
+        "withAuxiliaryUserLabels",
+        "withArticleRichContentState",
+        "withArticlePlainText",
+        "withArticleSummaryText",
+        "withArticleVoiceOver",
+        "withGrokAnalyze",
+        "withDisallowedReplyControls"
+      ]
+    },
+    "UserLiveTimeline": {
+      "queryId": "lena-Nam3oRYmKKNfvqHqg",
+      "operationType": "query",
+      "featureSwitches": [
+        "rweb_video_screen_enabled",
+        "rweb_cashtags_enabled",
+        "profile_label_improvements_pcf_label_in_post_enabled",
+        "responsive_web_profile_redirect_enabled",
+        "rweb_tipjar_consumption_enabled",
+        "verified_phone_label_enabled",
+        "creator_subscriptions_tweet_preview_api_enabled",
+        "responsive_web_graphql_timeline_navigation_enabled",
+        "premium_content_api_read_enabled",
+        "communities_web_enable_tweet_community_results_fetch",
+        "c9s_tweet_anatomy_moderator_badge_enabled",
+        "responsive_web_grok_analyze_button_fetch_trends_enabled",
+        "responsive_web_grok_analyze_post_followups_enabled",
+        "rweb_cashtags_composer_attachment_enabled",
+        "responsive_web_jetfuel_frame",
+        "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
+        "responsive_web_grok_share_attachment_enabled",
+        "responsive_web_grok_annotations_enabled",
+        "articles_preview_enabled",
+        "responsive_web_edit_tweet_api_enabled",
+        "rweb_conversational_replies_downvote_enabled",
+        "graphql_is_translatable_rweb_tweet_is_translatable_enabled",
+        "view_counts_everywhere_api_enabled",
+        "longform_notetweets_consumption_enabled",
+        "responsive_web_twitter_article_tweet_consumption_enabled",
+        "content_disclosure_indicator_enabled",
+        "content_disclosure_ai_generated_indicator_enabled",
+        "responsive_web_grok_show_grok_translated_post",
+        "responsive_web_grok_analysis_button_from_backend",
+        "post_ctas_fetch_enabled",
+        "freedom_of_speech_not_reach_fetch_enabled",
+        "standardized_nudges_misinfo",
+        "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled",
+        "longform_notetweets_rich_text_read_enabled",
+        "longform_notetweets_inline_media_enabled",
+        "responsive_web_nested_quote_preview_enabled",
+        "responsive_web_grok_image_annotation_enabled",
+        "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
+        "responsive_web_grok_community_note_auto_translation_is_enabled",
+        "responsive_web_enhance_cards_enabled"
+      ],
+      "fieldToggles": [
+        "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6933,7 +7727,7 @@
       ]
     },
     "UserMedia": {
-      "queryId": "TwLiEVUhRjjjKVc98IT0TQ",
+      "queryId": "iTSlWbsmD00dAE7Sk9xvIw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -6952,6 +7746,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -6974,11 +7769,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -6989,7 +7786,7 @@
       ]
     },
     "UserOriginalsTimeline": {
-      "queryId": "Yr8749ieoUptxRqQv766Fw",
+      "queryId": "ZFKu1DFS63hgrkLzR3Hsdw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7008,6 +7805,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7030,11 +7828,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7045,7 +7845,7 @@
       ]
     },
     "UserPhotoTimeline": {
-      "queryId": "-7Kl-CfOGgXpmvSvNxuPpA",
+      "queryId": "zk9sfrhiW8gNjQUP-hwung",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7064,6 +7864,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7086,11 +7887,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7107,7 +7910,7 @@
       "fieldToggles": []
     },
     "UserPromotableTweets": {
-      "queryId": "bwNtu6M5zSf94E7TmbrRIA",
+      "queryId": "ygFyqd6-sba3bnTSVi7Z4Q",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7126,6 +7929,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7148,11 +7952,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7163,7 +7969,7 @@
       ]
     },
     "UserPromotedTweets": {
-      "queryId": "K8KVrFEj0ec0WnOZOtTpaA",
+      "queryId": "ri1WrwjnQL6cvG0uoOisdA",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7182,6 +7988,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7204,11 +8011,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7219,7 +8028,7 @@
       ]
     },
     "UserRepliesTimeline": {
-      "queryId": "xz348nziCm96wndJ1S0MUQ",
+      "queryId": "fpl-c0_APDI3nZ1CeeBMbg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7238,6 +8047,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7260,11 +8070,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7275,7 +8087,7 @@
       ]
     },
     "UserRepostsTimeline": {
-      "queryId": "CnNg1YiKG7bRgi-RoIfKsw",
+      "queryId": "bWzOK-jDN4SYVcF6AQ22Qw",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7294,6 +8106,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7316,11 +8129,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7336,8 +8151,14 @@
       "featureSwitches": [],
       "fieldToggles": []
     },
+    "UserSportsProfile": {
+      "queryId": "59Zl1Tu5_LVZDmIw6GYO8A",
+      "operationType": "query",
+      "featureSwitches": [],
+      "fieldToggles": []
+    },
     "UserSuperFollowTweets": {
-      "queryId": "6SjR3fvrAJwMXjnYF-0KEQ",
+      "queryId": "ytLS5NE_Bm3wQBztZWFtAQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7356,6 +8177,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7378,11 +8200,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7393,7 +8217,7 @@
       ]
     },
     "UserTweets": {
-      "queryId": "jeAA-59Y9FL7FmjgBNIVPw",
+      "queryId": "D6z-FJI2pKuwEeYYxVIGbg",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7412,6 +8236,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7434,11 +8259,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7449,7 +8276,7 @@
       ]
     },
     "UserTweetsAndReplies": {
-      "queryId": "wI-ubAWfScnG6odLK4XgCg",
+      "queryId": "FmuxExUC21Xn_C2NwtX5sQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7468,6 +8295,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7490,11 +8318,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7511,7 +8341,7 @@
       "fieldToggles": []
     },
     "UserVideoTimeline": {
-      "queryId": "8FjnVm2ZmIymF6l1Tw2fBQ",
+      "queryId": "1UmMb8X-BFHS98GG6DyRsQ",
       "operationType": "query",
       "featureSwitches": [
         "rweb_video_screen_enabled",
@@ -7530,6 +8360,7 @@
         "rweb_cashtags_composer_attachment_enabled",
         "responsive_web_jetfuel_frame",
         "rweb_sports_post_context_enabled",
+        "x_elections_post_context_enabled",
         "responsive_web_grok_share_attachment_enabled",
         "responsive_web_grok_annotations_enabled",
         "articles_preview_enabled",
@@ -7552,11 +8383,13 @@
         "responsive_web_nested_quote_preview_enabled",
         "responsive_web_grok_image_annotation_enabled",
         "responsive_web_grok_imagine_annotation_enabled",
+        "responsive_web_made_on_x_label_enabled",
         "responsive_web_grok_community_note_auto_translation_is_enabled",
         "responsive_web_enhance_cards_enabled"
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels",
         "withArticleRichContentState",
         "withArticlePlainText",
@@ -7567,7 +8400,7 @@
       ]
     },
     "UsersByRestIds": {
-      "queryId": "BuQFwM7wpHl00cfHL-r0rA",
+      "queryId": "ubfbnAM4qTlMTOYleYhXSg",
       "operationType": "query",
       "featureSwitches": [
         "profile_label_improvements_pcf_label_in_post_enabled",
@@ -7578,11 +8411,12 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "UsersByScreenNames": {
-      "queryId": "8G9O4pAkWTXNv3XQuOGVrw",
+      "queryId": "cACg_kWQkzNQ74lcK5rksQ",
       "operationType": "query",
       "featureSwitches": [
         "hidden_profile_subscriptions_enabled",
@@ -7600,6 +8434,7 @@
       ],
       "fieldToggles": [
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
@@ -7614,7 +8449,7 @@
       ]
     },
     "Viewer": {
-      "queryId": "9t128XgFic52jPUEkJMf6w",
+      "queryId": "TpQxQtWMTMnIAMPlMGMqNw",
       "operationType": "query",
       "featureSwitches": [
         "subscriptions_upsells_api_enabled",
@@ -7628,11 +8463,12 @@
       "fieldToggles": [
         "isDelegate",
         "withPayments",
+        "withDmBlocks",
         "withAuxiliaryUserLabels"
       ]
     },
     "ViewerBadgeCounts": {
-      "queryId": "q4Npr1-FYRWyXsRzPckwEA",
+      "queryId": "I7FbT7Bfw_If9nT5q6PUQQ",
       "operationType": "query",
       "featureSwitches": [],
       "fieldToggles": []
@@ -7713,7 +8549,7 @@
     "longform_notetweets_consumption_enabled": true,
     "longform_notetweets_inline_media_enabled": false,
     "longform_notetweets_rich_text_read_enabled": true,
-    "post_ctas_fetch_enabled": false,
+    "post_ctas_fetch_enabled": true,
     "premium_content_api_read_enabled": false,
     "profile_label_improvements_pcf_label_in_post_enabled": true,
     "responsive_web_birdwatch_enforce_author_user_quotas": true,
@@ -7743,7 +8579,8 @@
     "responsive_web_grok_share_attachment_enabled": true,
     "responsive_web_grok_show_grok_translated_post": true,
     "responsive_web_jetfuel_frame": true,
-    "responsive_web_nested_quote_preview_enabled": false,
+    "responsive_web_made_on_x_label_enabled": false,
+    "responsive_web_nested_quote_preview_enabled": true,
     "responsive_web_profile_redirect_enabled": true,
     "responsive_web_twitter_article_notes_tab_enabled": true,
     "responsive_web_twitter_article_tweet_consumption_enabled": true,
@@ -7756,7 +8593,7 @@
     "spaces_2022_h2_clipping": true,
     "spaces_2022_h2_spaces_communities": true,
     "standardized_nudges_misinfo": true,
-    "subscriptions_feature_can_gift_premium": true,
+    "subscriptions_feature_can_gift_premium": false,
     "subscriptions_management_fetch_next_billing_time": true,
     "subscriptions_marketing_page_fetch_promotions": true,
     "subscriptions_upsells_api_enabled": false,
@@ -7771,7 +8608,9 @@
     "withArticleVoiceOver": false,
     "withAuxiliaryUserLabels": false,
     "withDisallowedReplyControls": false,
+    "withDmBlocks": false,
     "withGrokAnalyze": false,
-    "withPayments": false
+    "withPayments": false,
+    "x_elections_post_context_enabled": true
   }
 }

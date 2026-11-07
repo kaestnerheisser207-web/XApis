@@ -1,6 +1,2 @@
-requests>=2.31.0
-python-dotenv>=1.0.0
-loguru>=0.7.0
-openpyxl>=3.1.0
-# 传输层：curl_cffi 提供 Chrome TLS/HTTP2 指纹与浏览器一致（所有读写接口 + 登录流都走它）
-curl_cffi>=0.7.0
+# One pinned runtime dependency source for SDK, monitor, and distributions.
+-r requirements-watch.txt

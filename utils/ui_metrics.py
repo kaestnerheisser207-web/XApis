@@ -21,10 +21,10 @@ import tempfile
 import requests
 
 from utils.fingerprint import get_profile
+from utils.resource_paths import asset_path
 
 JS_INST_URL = 'https://x.com/i/js_inst?c_name=ui_metrics'
-RUNNER = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'static', 'ui_metrics.js'))
+RUNNER = str(asset_path('ui_metrics.js'))
 NODE = os.environ.get('NODE_BIN', 'node')
 
 

@@ -69,12 +69,20 @@ def _apply_fetch_headers(url: str, kwargs: dict):
 def get(url, **kwargs):
     kwargs.setdefault('impersonate', IMPERSONATE)
     _apply_fetch_headers(url, kwargs)
+    from builder.request_scope import current_transport
+    transport = current_transport()
+    if transport is not None:
+        return transport.request('GET', url, **kwargs)
     return _cffi.get(url, **kwargs)
 
 
 def post(url, **kwargs):
     kwargs.setdefault('impersonate', IMPERSONATE)
     _apply_fetch_headers(url, kwargs)
+    from builder.request_scope import current_transport
+    transport = current_transport()
+    if transport is not None:
+        return transport.request('POST', url, **kwargs)
     return _cffi.post(url, **kwargs)
 
 

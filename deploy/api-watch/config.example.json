@@ -1,0 +1,58 @@
+{
+  "scan_interval_seconds": 3600,
+  "probe_interval_seconds": 900,
+  "failure_threshold": 2,
+  "retention_days": 30,
+  "frontend": {
+    "enabled": true,
+    "authenticated": true,
+    "timeout": 20,
+    "max_assets": 600,
+    "max_seconds": 300
+  },
+  "probes": {
+    "enabled": true,
+    "username": "OpenAI",
+    "search_query": "from:OpenAI",
+    "post_id": "",
+    "guest": true,
+    "authenticated": true,
+    "notifications": true,
+    "chat": true,
+    "pagination": true,
+    "count": 5,
+    "request_gap_seconds": 1
+  },
+  "samples": {
+    "test_account_id": "",
+    "username": "OpenAI",
+    "search_query": "from:OpenAI",
+    "post_id": "",
+    "peer_user_id": "",
+    "peer_username": "",
+    "conversation_id": "",
+    "media_id": "",
+    "image_file": "fixtures/probe.png",
+    "video_file": "fixtures/probe.mp4",
+    "chat_settings_contract_file": ""
+  },
+  "writes": {
+    "enabled": false,
+    "interval_seconds": 86400,
+    "allow_publish": false,
+    "allow_follow": false,
+    "premium": false,
+    "articles": false
+  },
+  "lifecycle": {
+    "enabled": false,
+    "login_enabled": false,
+    "legacy_login_enabled": false,
+    "chat_token": false,
+    "chat_identity": false,
+    "chat_identity_recover": false,
+    "chat_new_conversation": false,
+    "chat_send": false,
+    "chat_key_version": ""
+  }
+}

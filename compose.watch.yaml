@@ -1,0 +1,27 @@
+services:
+  api-watch:
+    build:
+      context: .
+      dockerfile: Dockerfile.watch
+    restart: unless-stopped
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    stop_grace_period: 90s
+    command: [--config, /project/config.json, --env-file, /project/monitor.env, run]
+    volumes:
+      - api-watch-state:/state
+      # Initialize once with: python -m api_watch init --directory watch-project
+      # Contains configuration, test fixtures and private credentials; never baked in.
+      - ./watch-project:/project:ro
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+
+volumes:
+  api-watch-state:

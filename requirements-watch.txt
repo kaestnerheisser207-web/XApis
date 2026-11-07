@@ -1,0 +1,10 @@
+# Full monitor runtime; writes and lifecycle remain explicitly configured.
+# Direct dependencies pinned to versions used for local verification.
+requests==2.34.2
+python-dotenv==1.2.4
+loguru==0.7.3
+openpyxl==3.1.5
+curl_cffi==0.16.3
+PyNaCl==1.6.2
+cryptography==50.0.2
+chatxdk==0.5.0

@@ -1,0 +1,31 @@
+services:
+  xapis:
+    build:
+      context: .
+      dockerfile: Dockerfile.service
+    restart: unless-stopped
+    init: true
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    stop_grace_period: 40s
+    environment:
+      XAPIS_API_KEY: ${XAPIS_API_KEY:?Configure a private service key}
+      XAPIS_BIND: 0.0.0.0:4140
+      XAPIS_WORKERS: ${XAPIS_WORKERS:-2}
+      XAPIS_REQUEST_TIMEOUT: ${XAPIS_REQUEST_TIMEOUT:-25}
+    ports:
+      - "${XAPIS_HOST_BIND:?Configure the host bind address}:${XAPIS_PORT:?Configure the host port}:4140"
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:4140/readyz', timeout=3).read()"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'

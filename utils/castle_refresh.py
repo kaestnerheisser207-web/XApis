@@ -30,9 +30,9 @@ import requests
 
 from utils import castle_token
 from utils.frontend import fetch_chunk, fetch_shell_html, parse_all_assets
+from utils.resource_paths import asset_path
 
-CASTLE_DIR = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'static', 'castle'))
+CASTLE_DIR = str(asset_path('castle'))
 CASTLE_JS = os.path.join(CASTLE_DIR, 'castle.js')
 CANDIDATE_JS = os.path.join(CASTLE_DIR, 'castle.candidate.js')
 META_PATH = os.path.join(CASTLE_DIR, 'castle_meta.json')

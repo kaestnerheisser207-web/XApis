@@ -3,6 +3,7 @@ node_modules/
 *.so
 .Python
 build/
+*.egg-info/
 develop-eggs/
 dist/
 downloads/
@@ -30,13 +31,19 @@ env.bak/
 venv.bak/
 datas/
 .env
+.xapis/
+.api-watch/
+/watch-project/
+/deploy/api-watch/config.json
+/deploy/api-watch/secrets/
+/deploy/service/service.env
+/deploy/service/secrets/
 
-# Runtime-only branch policy: local investigation material and generated output
-# stay out of the deployable tree. The complete snapshot remains on the backup
+# Local investigation material and generated output stay out of the repository.
+# Regression tests in tests/ are versioned. The complete snapshot remains on the backup
 # branch created before this cleanup.
 /my_goal.md
 /docs/
-/tests/
 /_scratch/
 /_scratch_*.py
 /_*

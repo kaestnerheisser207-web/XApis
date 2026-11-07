@@ -1,0 +1,24 @@
+FROM python:3.12-slim AS build
+WORKDIR /build
+COPY requirements-watch.txt requirements-service.txt requirements-dev.txt ./
+RUN pip install --no-cache-dir -r requirements-dev.txt
+COPY pyproject.toml README.md ./
+COPY builder/ builder/
+COPY utils/ utils/
+COPY x_apis/ x_apis/
+COPY api_watch/ api_watch/
+COPY xapis_service/ xapis_service/
+COPY static/ static/
+RUN python -m build --wheel --no-isolation --outdir /wheels
+
+FROM python:3.12-slim
+ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
+WORKDIR /app
+COPY requirements-watch.txt requirements-service.txt ./
+RUN pip install --no-cache-dir -r requirements-service.txt \
+    && groupadd --gid 10001 xapis \
+    && useradd --uid 10001 --gid xapis --no-create-home xapis
+COPY --from=build /wheels/ /wheels/
+RUN pip install --no-cache-dir --no-deps /wheels/*.whl && rm -rf /wheels
+USER 10001:10001
+ENTRYPOINT ["python", "-m", "xapis_service"]

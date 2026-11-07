@@ -37,9 +37,9 @@ from utils.castle_crypto import (
     build_current_token_raw_pure,
     parse_payload,
 )
+from utils.resource_paths import asset_path
 
-CASTLE_DIR = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'static', 'castle'))
+CASTLE_DIR = str(asset_path('castle'))
 RUNNER = os.path.join(CASTLE_DIR, 'run.js')
 META_PATH = os.path.join(CASTLE_DIR, 'castle_meta.json')
 DEFAULT_CASTLE_FILE = 'castle.js'

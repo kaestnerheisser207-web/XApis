@@ -20,6 +20,8 @@ X 的每个 GraphQL 操作都有一个哈希 `queryId`，**随前端发版漂移
 import json
 import os
 import re
+import stat
+import tempfile
 import time
 from concurrent.futures import ThreadPoolExecutor
 
@@ -27,9 +29,9 @@ import requests
 
 from utils.frontend import (fetch_chunk, fetch_shell_html, parse_all_assets,
                             shell_headers)
+from utils.resource_paths import asset_path
 
-REGISTRY_PATH = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), '..', 'static', 'graphql.json'))
+REGISTRY_PATH = str(asset_path('graphql.json'))
 
 # {queryId:"xxx",operationName:"Yyy",operationType:"query",metadata:{featureSwitches:[..],fieldToggles:[..]}}
 _OPERATION_RE = re.compile(
@@ -143,20 +145,27 @@ def _fetch_home_shell(auth, proxies: dict = None) -> str:
     （用户维度解析后的 feature 取值，浏览器实际发送的就是这套）。"""
     from builder import client
     resp = client.get('https://x.com/home', headers=shell_headers(),
-                      cookies=auth.cookie, proxies=proxies, timeout=30)
+                      cookies=auth.cookie, proxies=proxies, timeout=30,
+                      allow_redirects=False)
     resp.raise_for_status()
+    if resp.status_code != 200 or 'responsive-web/client-web/' not in resp.text:
+        raise RuntimeError('登录态 home 未返回 client-web 页面，保留原注册表')
     return resp.text
 
 
 def _extract_operations(text: str) -> dict:
     operations = {}
     for match in _OPERATION_RE.finditer(text):
-        operations[match.group('name')] = {
+        name = match.group('name')
+        operation = {
             'queryId': match.group('qid'),
             'operationType': match.group('type'),
             'featureSwitches': _STRING_RE.findall(match.group('fs')),
             'fieldToggles': _STRING_RE.findall(match.group('ft')),
         }
+        if name in operations and operations[name] != operation:
+            raise RuntimeError(f'操作 {name} 的元数据冲突，保留原注册表')
+        operations[name] = operation
     return operations
 
 
@@ -164,23 +173,20 @@ def refresh(workers: int = 16, proxies: dict = None, verbose: bool = True,
             auth=None) -> dict:
     """全量重建注册表：枚举线上所有 webpack 分片 → 提取操作 → 写 static/graphql.json。
 
-    `auth` 传入已登录会话时，feature 取值改从**登录态 home shell** 解析（含 user.config
-    覆盖），与浏览器该账号实际发送的值逐个一致；否则退回未登录 defaultConfig。
+    登录态的资源清单和 feature 取值来自同一份 home shell，避免混用发版或前端栈。
+    下载失败、空结果或操作冲突时保留原注册表；完整结果通过原子替换写入。
     """
-    session = requests.Session()
-    html = fetch_shell_html(session, proxies)
+    if auth is not None and getattr(auth, 'is_logged_in', False):
+        html = _fetch_home_shell(auth, proxies)
+        if verbose:
+            print('资源清单与 feature 取值：登录态 home shell（含 user.config）')
+    else:
+        with requests.Session() as session:
+            session.trust_env = False
+            html = fetch_shell_html(session, proxies)
     assets = parse_all_assets(html)
     defaults = _parse_feature_defaults(html)
     sha_match = _SHA_RE.search(html)
-
-    if auth is not None and getattr(auth, 'is_logged_in', False):
-        try:
-            defaults = _parse_feature_defaults(_fetch_home_shell(auth, proxies))
-            if verbose:
-                print('feature 取值：已用登录态 home shell 的 user.config（与浏览器一致）')
-        except Exception as exc:
-            if verbose:
-                print(f'  ! 登录态 feature 取值失败，回退未登录 defaultConfig：{exc}')
 
     # 图标和翻译分片里不可能有 GraphQL 操作，跳过以省一半流量
     targets = {name: url for name, url in assets.items()
@@ -195,16 +201,36 @@ def refresh(workers: int = 16, proxies: dict = None, verbose: bool = True,
     def worker(item):
         name, url = item
         try:
-            return name, _extract_operations(fetch_chunk(url, session, proxies))
-        except Exception as exc:
-            failures.append((name, str(exc)))
-            return name, {}
+            with requests.Session() as session:
+                session.trust_env = False
+                text = fetch_chunk(url, session, proxies)
+            if text.lstrip().lower().startswith(('<!doctype html', '<html')):
+                raise RuntimeError('asset_not_javascript')
+            found = _extract_operations(text)
+            markers = re.findall(r'queryId\s*:\s*["\'][\w-]+["\']', text)
+            if len(markers) > len(list(_OPERATION_RE.finditer(text))):
+                raise RuntimeError('unsupported_operation_metadata')
+            return name, found, False
+        except Exception:
+            # Transport exceptions can contain proxy credentials. Report only
+            # manifest names, and never install a partially downloaded release.
+            return name, {}, True
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        for done, (name, found) in enumerate(pool.map(worker, targets.items()), 1):
-            operations.update(found)
+        for done, (name, found, failed) in enumerate(pool.map(worker, targets.items()), 1):
+            if failed:
+                failures.append(name)
+            for operation_name, operation in found.items():
+                if operation_name in operations and operations[operation_name] != operation:
+                    raise RuntimeError(f'操作 {operation_name} 的元数据冲突，保留原注册表')
+                operations[operation_name] = operation
             if verbose and done % 100 == 0:
                 print(f'  ...{done}/{len(targets)}，已收集 {len(operations)} 个操作')
+
+    if failures:
+        raise RuntimeError(f'{len(failures)} 个分片采集失败，保留原注册表')
+    if not operations:
+        raise RuntimeError('未提取到 GraphQL 操作，保留原注册表')
 
     # 只保留被操作引用到的开关，避免把两千多条 defaultConfig 全塞进仓库
     referenced = set()
@@ -220,15 +246,25 @@ def refresh(workers: int = 16, proxies: dict = None, verbose: bool = True,
         'featureDefaults': feature_defaults,
     }
 
-    os.makedirs(os.path.dirname(REGISTRY_PATH), exist_ok=True)
-    with open(REGISTRY_PATH, 'w', encoding='utf-8') as fp:
-        json.dump(registry, fp, ensure_ascii=False, indent=2)
+    directory = os.path.dirname(os.path.abspath(REGISTRY_PATH))
+    os.makedirs(directory, exist_ok=True)
+    mode = stat.S_IMODE(os.stat(REGISTRY_PATH).st_mode) if os.path.exists(REGISTRY_PATH) else 0o644
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=directory,
+                                         prefix='.graphql-', delete=False) as fp:
+            temporary = fp.name
+            os.fchmod(fp.fileno(), mode)
+            json.dump(registry, fp, ensure_ascii=False, indent=2)
+            fp.write('\n')
+        os.replace(temporary, REGISTRY_PATH)
+    finally:
+        if temporary and os.path.exists(temporary):
+            os.unlink(temporary)
 
     global _cache
     _cache = registry
     if verbose:
         print(f'写入 {REGISTRY_PATH}：{len(operations)} 个操作，'
-              f'{len(feature_defaults)} 个开关，失败分片 {len(failures)} 个')
-        for name, err in failures[:5]:
-            print(f'  ! {name}: {err}')
+              f'{len(feature_defaults)} 个开关')
     return registry

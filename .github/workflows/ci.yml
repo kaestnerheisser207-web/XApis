@@ -1,0 +1,62 @@
+name: SDK and distribution checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  containers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build read provider and monitor images
+        run: |
+          docker build -f Dockerfile.service -t xapis-service-ci .
+          docker build -f Dockerfile.watch -t xapis-watch-ci .
+      - name: Check installed assets and readiness without network or credentials
+        run: |
+          docker run --rm --network none --read-only --tmpfs /tmp --entrypoint python xapis-service-ci -c "from xapis_service.app import create_app; from xapis_service.config import Settings; assert create_app(Settings('synthetic-ci-key-not-a-real-secret-123')).test_client().get('/readyz').status_code == 200"
+          docker run --rm --network none --read-only --tmpfs /tmp xapis-watch-ci --help
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: requirements*.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned development dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Offline unit and local integration tests
+        run: python -m unittest discover -s tests -v
+      - name: Build wheel from source distribution
+        run: python -m build --no-isolation
+      - name: Check distribution allowlist and checksums
+        run: python scripts/check_dist.py dist/*.whl dist/*.tar.gz
+      - name: Install and smoke-test outside the checkout
+        shell: bash
+        run: |
+          python -m venv "$RUNNER_TEMP/xapis-install"
+          "$RUNNER_TEMP/xapis-install/bin/python" -m pip install -r requirements-service.txt
+          "$RUNNER_TEMP/xapis-install/bin/python" -m pip install --no-deps dist/*.whl
+          cp scripts/check_dist.py "$RUNNER_TEMP/check_dist.py"
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/xapis-install/bin/python" -I "$RUNNER_TEMP/check_dist.py" --installed
+      - uses: actions/upload-artifact@v4
+        with:
+          name: xapis-internal-python-${{ matrix.python }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 14

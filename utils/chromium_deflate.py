@@ -17,7 +17,8 @@ from __future__ import annotations
 import ctypes
 import os
 from functools import lru_cache
-from pathlib import Path
+
+from utils.resource_paths import asset_path
 
 
 _Z_OK = 0
@@ -55,8 +56,7 @@ def _default_library() -> str:
     override = os.environ.get('CASTLE_CHROMIUM_ZLIB', '').strip()
     if override:
         return override
-    return str(Path(__file__).resolve().parent.parent / 'static' / 'castle'
-               / 'chromium_zlib.dll')
+    return str(asset_path('castle', 'chromium_zlib.dll'))
 
 
 @lru_cache(maxsize=4)

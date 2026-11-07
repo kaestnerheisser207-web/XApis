@@ -9,6 +9,7 @@
 单步方法直接返回 `res_json`，与 ../DouYin_Spider 的 `DouyinAPI` 一致。
 """
 
+import math
 import time
 
 from builder import client
@@ -19,6 +20,12 @@ from x_apis.errors import GraphQLError
 
 X_HOST = 'https://x.com'
 API_11 = 'https://x.com/i/api/1.1'
+
+
+class _ThreadPostIds(list):
+    """Keep the legacy list receipt while retaining the failed item's outcome."""
+    failed_index = None
+    delivery_status = None
 
 
 def graphql_post(auth, operation_name: str, variables: dict,
@@ -165,10 +172,19 @@ class XWriteAPI:
         :param images: 与 texts 等长的列表，每项是该条的图片路径（或路径列表 / None）。
         :param reply_to: 给出时第一条也作为回复挂在这条推文下面。
         :param interval: 两条之间的间隔秒数，太快容易触发风控。
-        :return: (success, msg, tweet_ids)。中途失败时 tweet_ids 是已发出的那些。
+        :return: (success, msg, tweet_ids)。中途失败时仅保留已确认 ID；
+            列表附带 failed_index（从 0 开始）和 delivery_status。
         """
+        if isinstance(texts, (str, bytes)):
+            raise ValueError('texts must be a sequence of nonempty strings')
+        texts = list(texts)
+        if not texts or any(not isinstance(text, str) or not text.strip() for text in texts):
+            raise ValueError('texts must be a sequence of nonempty strings')
+        if (isinstance(interval, bool) or not isinstance(interval, (int, float))
+                or not math.isfinite(interval) or interval < 0):
+            raise ValueError('interval must be a finite nonnegative number')
         images = list(images or [])
-        tweet_ids, parent = [], reply_to
+        tweet_ids, parent = _ThreadPostIds(), reply_to
         for index, text in enumerate(texts):
             if index and interval:
                 time.sleep(interval)
@@ -177,20 +193,36 @@ class XWriteAPI:
                 images=images[index] if index < len(images) else None,
                 reply_to=parent)
             if not success:
+                tweet_ids.failed_index = index
+                tweet_ids.delivery_status = ('rejected' if isinstance(res_json, dict)
+                                            and res_json.get('errors') else 'unknown')
                 return False, f'第 {index + 1} 条失败：{msg}', tweet_ids
-            parent = XWriteAPI.extract_tweet_id(res_json)
+            try:
+                parent = XWriteAPI.extract_tweet_id(res_json)
+            except (KeyError, TypeError, AttributeError):
+                tweet_ids.failed_index = index
+                tweet_ids.delivery_status = 'unknown'
+                return False, f'第 {index + 1} 条回执缺少作品 ID，发送结果未知；请先核对，勿整体重发', tweet_ids
             tweet_ids.append(parent)
         return True, '成功', tweet_ids
 
     @staticmethod
     def extract_tweet_id(res_json: dict) -> str:
         """从 CreateTweet 响应里取出新推文的 rest_id。"""
-        data = (res_json or {}).get('data') or {}
+        data = res_json.get('data') if isinstance(res_json, dict) else None
+        if not isinstance(data, dict):
+            raise KeyError('发帖回执缺少有效作品 ID')
         for key in ('create_tweet', 'notetweet_create'):
-            result = ((data.get(key) or {}).get('tweet_results') or {}).get('result')
-            if result:
-                return result.get('rest_id') or result['legacy']['id_str']
-        raise KeyError(f'响应里没有 rest_id：{res_json}')
+            holder = data.get(key)
+            result = holder.get('tweet_results') if isinstance(holder, dict) else None
+            result = result.get('result') if isinstance(result, dict) else None
+            if not isinstance(result, dict):
+                continue
+            legacy = result.get('legacy')
+            tweet_id = result.get('rest_id') or (legacy.get('id_str') if isinstance(legacy, dict) else None)
+            if isinstance(tweet_id, str) and tweet_id.isascii() and tweet_id.isdigit():
+                return tweet_id
+        raise KeyError('发帖回执缺少有效作品 ID')
 
     @staticmethod
     def delete_tweet(auth, work_id: str, **kwargs) -> dict:

@@ -13,6 +13,7 @@ X 目前同时在跑两套前端：
 所以**纯 HTTP 就能枚举到全部分片**，不需要开浏览器。
 """
 
+import json
 import re
 
 import requests
@@ -21,6 +22,17 @@ from utils.fingerprint import get_profile
 
 SHELL_URL = 'https://x.com/i/flow/login'
 ASSET_BASE = 'https://abs.twimg.com/responsive-web/client-web/'
+
+
+def parse_initial_state(html: str) -> dict:
+    """Read the JSON shell state without evaluating any JavaScript."""
+    match = re.search(r'window\.__INITIAL_STATE__\s*=\s*', html)
+    if not match:
+        raise ValueError('app shell 缺少初始状态')
+    state, _ = json.JSONDecoder().raw_decode(html, match.end())
+    if not isinstance(state, dict):
+        raise ValueError('app shell 初始状态无效')
+    return state
 
 _META_RE = re.compile(
     r'<meta[^>]+name=["\']twitter-site-verification["\'][^>]+content=["\']([^"\']+)["\']')

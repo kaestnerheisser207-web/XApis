@@ -13,6 +13,7 @@ from builder.header import HeaderBuilder, HeaderType
 from builder.params import GraphQLOperation
 from utils.x_util import extract_cursor, parse_screen_name, parse_tweet_id
 from x_apis.errors import GraphQLError
+from x_apis.client_errors import XClientError
 
 try:
     from urllib.parse import quote
@@ -20,6 +21,39 @@ except ImportError:  # pragma: no cover
     from urllib import quote
 
 X_HOST = 'https://x.com'
+NOTIFICATION_TYPES = ('All', 'Mentions', 'Verified', 'Priority', 'SuperFollowers')
+
+
+def _require_subscriber_notifications(auth):
+    """Match the current web tab's active-creator AND feature-switch gate."""
+    from utils.frontend import parse_initial_state
+    from utils.graphql_registry import _fetch_home_shell, _parse_feature_defaults
+    if not auth.is_logged_in:
+        raise XClientError('auth_required', '订阅者通知需要有效登录会话')
+    try:
+        html = _fetch_home_shell(auth, auth.proxies)
+        session = parse_initial_state(html)['session']
+        uid = session.get('user_id')
+        enabled = _parse_feature_defaults(html).get('responsive_web_subscribers_ntab_for_creators_enabled')
+        if not isinstance(uid, str) or not uid.isascii() or not uid.isdigit():
+            raise XClientError('auth_required', '登录会话未通过身份检查')
+        if auth.user_id and auth.user_id != uid:
+            raise ValueError('identity mismatch')
+        if type(enabled) is not bool:
+            raise ValueError('unknown feature state')
+        if enabled:
+            active = session.get('isActiveCreator')
+            if type(active) is not bool:
+                raise ValueError('unknown creator state')
+            if active:
+                return
+        reason = 'feature_disabled' if not enabled else 'creator_required'
+    except XClientError:
+        raise
+    except (RuntimeError, ValueError, KeyError, TypeError, AttributeError):
+        raise XClientError('invalid_response', '无法确认订阅者通知的账号开放条件') from None
+    raise XClientError('capability_unavailable', '当前账号未开放订阅者通知（SuperFollowers）',
+                       result={'category': 'SuperFollowers', 'reason': reason, 'available': False})
 
 
 def graphql_get(auth, operation_name: str, variables: dict,
@@ -87,6 +121,32 @@ class XAPI:
     每个方法的 variables / fieldToggles 都**逐字段对齐浏览器实抓**。
     少一个字段服务端可能静默降级或直接 400，所以这里不做"看起来没用就省掉"的裁剪。
     """
+
+    # ---- 通知 ------------------------------------------------------------ #
+
+    @staticmethod
+    def get_notifications(auth, type: str = 'All', count: int = 20,
+                          cursor: str = None) -> dict:
+        """读取网页端通知列表，不调用通知已读更新接口。
+
+        分类来自 2026-10-01 bundle.Notifications：All/Mentions/Verified/
+        Priority/SuperFollowers。分类是否对某个账号可用，以实际响应为准。
+        返回原始 GraphQL 响应；分页 cursor 取通知页底部游标。
+        """
+        if type not in NOTIFICATION_TYPES:
+            raise ValueError(f'通知分类必须为 {NOTIFICATION_TYPES}')
+        if (not isinstance(count, int) or isinstance(count, bool)
+                or not 1 <= count <= 100):
+            raise ValueError('count 必须为 1 到 100 的整数')
+        if cursor is not None and (not isinstance(cursor, str) or not cursor):
+            raise ValueError('cursor 必须为非空字符串或 None')
+        if type == 'SuperFollowers':
+            _require_subscriber_notifications(auth)
+        variables = {'timeline_type': type, 'count': count}
+        if cursor is not None:
+            variables['cursor'] = cursor
+        return graphql_get(auth, 'NotificationsTimeline', variables,
+                           referer=f'{X_HOST}/notifications')
 
     # ---- 作品 ------------------------------------------------------------ #
 
@@ -169,6 +229,20 @@ class XAPI:
 
         :param product: Top / Latest / People / Media / Lists。
         """
+        if product == 'Lists':
+            # bundle.UserLists -> fetchListSearch: querySource is omitted.
+            # Its response lives under list_search_timeline, not search_timeline.
+            if not isinstance(query, str) or not query.strip():
+                raise ValueError('列表搜索关键词不能为空')
+            if type(count) is not int or not 1 <= count <= 100:
+                raise ValueError('count 必须为 1 到 100 的整数')
+            if cursor is not None and (not isinstance(cursor, str) or not cursor):
+                raise ValueError('cursor 必须为非空字符串或 None')
+            variables = {'rawQuery': query, 'count': count}
+            if cursor is not None:
+                variables['cursor'] = cursor
+            return graphql_get(auth, 'ListSearchTimeline', variables,
+                               referer=f'{X_HOST}/i/lists/search?q={quote(query)}')
         variables = {
             'rawQuery': query,
             'count': count,

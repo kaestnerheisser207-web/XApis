@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xapis-internal"
+version = "0.1.0rc1"
+description = "Internal X business SDK, read provider, and protocol monitor"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+service = ["Flask==3.1.3", "gunicorn==25.3.0"]
+dev = ["build==1.6.1", "setuptools==84.0.0"]
+
+[project.scripts]
+xapis-watch = "api_watch.__main__:main"
+xapis-service = "xapis_service.__main__:main"
+
+[tool.setuptools]
+packages = ["x_apis", "builder", "utils", "api_watch", "xapis_service", "xapis_assets"]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+xapis_assets = "static"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-watch.txt"]}
+
+[tool.setuptools.package-data]
+xapis_assets = [
+  "graphql.json",
+  "transaction_l1.json",
+  "ui_metrics.js",
+  "castle/castle.js",
+  "castle/castle.umd-BneRArir.js",
+  "castle/castle_meta.json",
+  "castle/chromium_zlib.dll",
+  "castle/chromium_zlib.meta.json",
+  "castle/env_core.js",
+  "castle/rolldown-runtime-XXLRXQBO.js",
+  "castle/run.js",
+]
+api_watch = ["fixtures/probe.png", "fixtures/probe.mp4"]

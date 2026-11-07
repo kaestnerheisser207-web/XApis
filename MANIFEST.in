@@ -1,0 +1,19 @@
+# Start from an explicit source allowlist; never archive local capture material.
+global-exclude *
+include pyproject.toml MANIFEST.in
+include requirements.txt requirements-watch.txt requirements-service.txt requirements-dev.txt
+recursive-include builder *.py
+recursive-include utils *.py
+recursive-include x_apis *.py
+recursive-include api_watch *.py
+recursive-include xapis_service *.py
+include static/__init__.py
+include static/graphql.json static/transaction_l1.json static/ui_metrics.js
+include static/castle/castle.js static/castle/castle.umd-BneRArir.js
+include static/castle/castle_meta.json static/castle/chromium_zlib.dll
+include static/castle/chromium_zlib.meta.json static/castle/env_core.js
+include static/castle/rolldown-runtime-XXLRXQBO.js static/castle/run.js
+include api_watch/fixtures/probe.png api_watch/fixtures/probe.mp4
+include scripts/check_dist.py
+include .github/workflows/ci.yml
+global-exclude __pycache__ *.py[cod]
